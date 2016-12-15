@@ -1,0 +1,12 @@
+<div data-ng-controller="toDoCtrl" class="todoArea">
+  <h3>Completed</h3>
+  <input type="text" data-ng-model="createToDoText" /> <button class="createBtn" data-ng-click="createToDo(createToDoText); createToDoText=''">Create</button>
+  <li data-ng-repeat="todo in todos | filter:{completed: true} track by $index">
+    {{todo.name}}
+
+    <span class="todoUncomplete" data-ng-show="todo.completed == true" data-ng-click="changeToDo(todos.indexOf(todo), false)"> Uncomplete </span>
+    <span class="todoComplete" data-ng-show="todo.completed == false" data-ng-click="changeToDo(todos.indexOf(todo), true)"> Complete </span>
+
+    <span class="deleteToDo" data-ng-click="deleteToDo(todos.indexOf(todo))">X</span>
+  </li>
+</div>

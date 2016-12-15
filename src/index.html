@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-ng-app="toDoApp">
+  <head>
+    <title>AngularJsToDoApp</title>
+
+    <link href="css/style.css" type="text/css" rel="stylesheet"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script src="client.js"></script>
+  </head>
+  <body>
+
+    <div class="dashboard">
+      <a href="/projects/angularjstodo/src/index.html#!/">Home</a>
+      <a href="/projects/angularjstodo/src/index.html#!/activeToDo">Active To Do's</a>
+      <a href="/projects/angularjstodo/src/index.html#!/completedToDo">Completed To Do's</a>
+    </div>
+    <div data-ng-view>
+
+    </div>
+
+
+  </body>
+</html>

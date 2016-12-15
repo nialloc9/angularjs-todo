@@ -1,0 +1,39 @@
+body{
+  margin: 40px;
+}
+
+.todoArea button{
+  background-color: aliceblue;
+  padding: 2px;
+}
+
+.todoArea li{
+  list-style: none;
+  margin-top: 10px;
+}
+
+.todoArea li .deleteToDo{
+  cursor: pointer;
+}
+
+.todoArea li .deleteToDo:hover{
+  opacity: 0.5;
+}
+
+.todoArea li .todoComplete{
+  color: green;
+  cursor: pointer;
+}
+
+.todoArea li .todoComplete:hover{
+  opacity: 0.5;
+}
+
+.todoArea li .todoUncomplete{
+  color: red;
+  cursor: pointer;
+}
+
+.todoArea li .todoUncomplete:hover{
+  opacity: 0.5;
+}
